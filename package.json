@@ -1,0 +1,11 @@
+{
+  "name": "parse-schema",
+  "author": "Michael Rhodes",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "flush-write-stream": "~1.0.2",
+    "xtend": "~4.0.1"
+  }
+}
