@@ -42,8 +42,6 @@ function values (line) {
 
 function type (t) {
   var first = t.split(/\b/)[0]
-  if (t === 'tinyint(1)') return 'boolean'
-  if (first === 'point') return 'array'
   if (/(int|float|fixed|double|dec)/.test(first)) return 'number'
   if (/(text|char|enum)/.test(first)) return 'string'
   return first
