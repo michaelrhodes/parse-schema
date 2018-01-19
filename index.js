@@ -44,5 +44,6 @@ function type (t) {
   var first = t.split(/\b/)[0]
   if (/(int|float|fixed|double|dec)/.test(first)) return 'number'
   if (/(text|char|enum)/.test(first)) return 'string'
+  if (/(date|timestamp)/.test(first)) return 'date'
   return first
 }
